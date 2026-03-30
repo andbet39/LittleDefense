@@ -1,0 +1,69 @@
+{
+  "player": {
+    "moveSpeed": 12,
+    "jumpImpulse": 12,
+    "spawnOffset": { "x": 3, "z": 3 },
+    "hp": 100,
+    "damage": { "dice": 1, "sides": 12, "bonus": 4 },
+    "attackCooldown": 0.3,
+    "attackRange": 2.0,
+    "shieldDice": 6,
+    "lungeImpulse": 3.5
+  },
+  "crate": {
+    "model": "/assets/objects/Assets/gltf/chest_gold.gltf",
+    "scale": 1.5,
+    "count": 5,
+    "minDistance": 8,
+    "hp": 500,
+    "colliderHalf": { "x": 0.6, "y": 0.6, "z": 0.6 }
+  },
+  "waves": {
+    "baseMonstersPerWave": 3,
+    "monstersPerWaveIncrease": 2,
+    "hpMultiplierPerWave": 0.15,
+    "timeBetweenMonsters": 1.5,
+    "timeBetweenWaves": 8,
+    "maxAliveMonsters": 20,
+    "typeUnlock": {
+      "Skeleton_Rogue": 3,
+      "Skeleton_Mage": 5
+    },
+    "typeMix": {
+      "Skeleton_Warrior": 0.5,
+      "Skeleton_Rogue": 0.3,
+      "Skeleton_Mage": 0.2
+    }
+  },
+  "monsters": {
+    "Skeleton_Warrior": {
+      "hp": 40, "dice": 1, "sides": 8, "bonus": 2,
+      "cooldown": 0.5, "range": 1.4,
+      "speed": 7,
+      "weapon": "/assets/Adventurer/Assets/gltf/sword_1handed.gltf",
+      "divertRange": 5, "divertLoseRange": 8, "divertDuration": 4
+    },
+    "Skeleton_Rogue": {
+      "hp": 25, "dice": 1, "sides": 6, "bonus": 4,
+      "cooldown": 0.3, "range": 1.4,
+      "speed": 9,
+      "weapon": "/assets/Adventurer/Assets/gltf/dagger.gltf",
+      "waypointOffset": 1.5,
+      "sprintSpeedMultiplier": 2.0, "sprintDuration": 1.5, "sprintInterval": 5
+    },
+    "Skeleton_Mage": {
+      "hp": 20, "dice": 1, "sides": 10, "bonus": 1,
+      "cooldown": 0.8, "range": 8,
+      "speed": 5,
+      "weapon": "/assets/Adventurer/Assets/gltf/staff.gltf",
+      "kiteMinRange": 4, "attackRange": 8
+    }
+  },
+  "pathfinding": {
+    "gridSize": 50,
+    "cellSize": 1,
+    "obstaclePadding": 0.3,
+    "repathInterval": { "min": 2, "max": 3 }
+  },
+  "crateAttackRange": 2.0
+}
