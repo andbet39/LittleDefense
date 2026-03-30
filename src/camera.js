@@ -37,6 +37,31 @@ export function createCamera(aspect) {
     applyZoom();
   }, { passive: false });
 
+  // Pinch-to-zoom on touch devices
+  let lastPinchDist = 0;
+  window.addEventListener('touchstart', (e) => {
+    if (e.touches.length === 2) {
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      lastPinchDist = Math.sqrt(dx * dx + dy * dy);
+    }
+  }, { passive: false });
+  window.addEventListener('touchmove', (e) => {
+    if (e.touches.length === 2) {
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      if (lastPinchDist > 0) {
+        const delta = lastPinchDist - dist;
+        viewSize += delta * 0.05;
+        viewSize = Math.max(MIN_VIEW, Math.min(MAX_VIEW, viewSize));
+        applyZoom();
+      }
+      lastPinchDist = dist;
+    }
+  }, { passive: false });
+  window.addEventListener('touchend', () => { lastPinchDist = 0; }, { passive: false });
+
   return camera;
 }
 
