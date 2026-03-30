@@ -11,7 +11,7 @@
     "lungeImpulse": 3.5
   },
   "crate": {
-    "model": "/assets/objects/Assets/gltf/chest_gold.gltf",
+    "model": "assets/objects/Assets/gltf/chest_gold.gltf",
     "scale": 1.5,
     "count": 5,
     "minDistance": 8,
@@ -40,14 +40,14 @@
       "hp": 40, "dice": 1, "sides": 8, "bonus": 2,
       "cooldown": 0.5, "range": 1.4,
       "speed": 7,
-      "weapon": "/assets/Adventurer/Assets/gltf/sword_1handed.gltf",
+      "weapon": "assets/Adventurer/Assets/gltf/sword_1handed.gltf",
       "divertRange": 5, "divertLoseRange": 8, "divertDuration": 4
     },
     "Skeleton_Rogue": {
       "hp": 25, "dice": 1, "sides": 6, "bonus": 4,
       "cooldown": 0.3, "range": 1.4,
       "speed": 9,
-      "weapon": "/assets/Adventurer/Assets/gltf/dagger.gltf",
+      "weapon": "assets/Adventurer/Assets/gltf/dagger.gltf",
       "waypointOffset": 1.5,
       "sprintSpeedMultiplier": 2.0, "sprintDuration": 1.5, "sprintInterval": 5
     },
@@ -55,7 +55,7 @@
       "hp": 20, "dice": 1, "sides": 10, "bonus": 1,
       "cooldown": 0.8, "range": 8,
       "speed": 5,
-      "weapon": "/assets/Adventurer/Assets/gltf/staff.gltf",
+      "weapon": "assets/Adventurer/Assets/gltf/staff.gltf",
       "kiteMinRange": 4, "attackRange": 8
     }
   },

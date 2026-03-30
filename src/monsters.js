@@ -21,9 +21,9 @@ import { rollLootDrop } from './loot.js';
 import { getNearestCratePos, getNearestCrateCombat } from './crate.js';
 
 // ── Asset paths ──────────────────────────────────────────────────
-const MODEL_BASE        = '/assets/Monster/characters/gltf/';
-const ANIM_BASIC        = '/assets/Monster/Animations/gltf/Rig_Medium/Rig_Medium_MovementBasic.glb';
-const ANIM_COMBAT_MELEE = '/charecter/Animations/gltf/Rig_Medium/Rig_Medium_CombatMelee.glb';
+const MODEL_BASE        = 'assets/Monster/characters/gltf/';
+const ANIM_BASIC        = 'assets/Monster/Animations/gltf/Rig_Medium/Rig_Medium_MovementBasic.glb';
+const ANIM_COMBAT_MELEE = 'charecter/Animations/gltf/Rig_Medium/Rig_Medium_CombatMelee.glb';
 
 // ── Constants ────────────────────────────────────────────────────
 const CAPSULE_HALF_HEIGHT  = 0.3;

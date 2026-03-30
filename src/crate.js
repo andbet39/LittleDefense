@@ -56,7 +56,7 @@ function generateRandomPositions(count, minDist) {
  * @param {Object} cfg - config.crate section
  */
 export async function createCrate(scene, cfg = {}) {
-  const modelPath = cfg.model || '/assets/objects/Assets/gltf/chest_gold.gltf';
+  const modelPath = cfg.model || 'assets/objects/Assets/gltf/chest_gold.gltf';
   const scale     = cfg.scale || 1.5;
   const hp        = cfg.hp || 500;
   const ch        = cfg.colliderHalf || { x: 0.6, y: 0.6, z: 0.6 };

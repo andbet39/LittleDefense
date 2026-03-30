@@ -6,7 +6,7 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { spawnDamageNumber } from './combat.js';
 
-const OBJ_BASE = '/assets/objects/Assets/gltf/';
+const OBJ_BASE = 'assets/objects/Assets/gltf/';
 const loader = new GLTFLoader();
 
 // ── Loot definitions ─────────────────────────────────────────────

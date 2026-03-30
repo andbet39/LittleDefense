@@ -17,13 +17,13 @@ import {
 } from './combat.js';
 
 // ── Asset paths ──────────────────────────────────────────────────
-const CHARACTER_MODEL    = '/assets/Adventurer/Characters/gltf/Barbarian.glb';
-const ANIM_BASIC         = '/assets/Adventurer/Animations/gltf/Rig_Medium/Rig_Medium_MovementBasic.glb';
-const ANIM_ADVANCED      = '/charecter/Animations/gltf/Rig_Medium/Rig_Medium_MovementAdvanced.glb';
-const ANIM_COMBAT_MELEE  = '/charecter/Animations/gltf/Rig_Medium/Rig_Medium_CombatMelee.glb';
-const ANIM_COMBAT_RANGED = '/charecter/Animations/gltf/Rig_Medium/Rig_Medium_CombatRanged.glb';
-const WEAPON_MODEL       = '/assets/Adventurer/Assets/gltf/axe_2handed.gltf';
-const SHIELD_MODEL       = '/assets/Adventurer/Assets/gltf/shield_round_barbarian.gltf';
+const CHARACTER_MODEL    = 'assets/Adventurer/Characters/gltf/Barbarian.glb';
+const ANIM_BASIC         = 'assets/Adventurer/Animations/gltf/Rig_Medium/Rig_Medium_MovementBasic.glb';
+const ANIM_ADVANCED      = 'charecter/Animations/gltf/Rig_Medium/Rig_Medium_MovementAdvanced.glb';
+const ANIM_COMBAT_MELEE  = 'charecter/Animations/gltf/Rig_Medium/Rig_Medium_CombatMelee.glb';
+const ANIM_COMBAT_RANGED = 'charecter/Animations/gltf/Rig_Medium/Rig_Medium_CombatRanged.glb';
+const WEAPON_MODEL       = 'assets/Adventurer/Assets/gltf/axe_2handed.gltf';
+const SHIELD_MODEL       = 'assets/Adventurer/Assets/gltf/shield_round_barbarian.gltf';
 
 // ── Ranged weapon names (substring match against equipped.weapon) ─
 const RANGED_WEAPON_KEYWORDS = ['Bow', 'Crossbow', 'Wand', 'Staff'];

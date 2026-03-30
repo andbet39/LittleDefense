@@ -6,7 +6,7 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { createStaticBody, createCylinderBody } from './physics.js';
 
-const ENV_BASE = '/environment/Assets/gltf/';
+const ENV_BASE = 'environment/Assets/gltf/';
 const loader = new GLTFLoader();
 
 // Populated at runtime from mapdata.json
@@ -28,7 +28,7 @@ export async function createPlatforms(scene) {
   // ── Load map data ───────────────────────────────────────────
   let mapData = { worldSize: 50, groundColor: '0x5a8a3c', obstacles: [], decorations: [] };
   try {
-    const resp = await fetch('/mapdata.json');
+    const resp = await fetch('mapdata.json');
     mapData = await resp.json();
   } catch (e) {
     console.warn('[Platforms] mapdata.json not found, using empty map');

@@ -18,7 +18,7 @@ async function main() {
   // ── Load config ──────────────────────────────────────────────────
   let config = {};
   try {
-    const resp = await fetch('/config.json');
+    const resp = await fetch('config.json');
     config = await resp.json();
   } catch (e) {
     console.warn('[Main] config.json not found, using defaults');
